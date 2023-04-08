@@ -1,3 +1,5 @@
+
+
 v#!/bin/bash
 # Dossier à chiffrer
 folder="/path/to/folder"
