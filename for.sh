@@ -7,3 +7,5 @@ do
   # Copier le fichier chiffré dans le dossier de destination
   cp "$file" "$destination_folder"
 done
+
+
