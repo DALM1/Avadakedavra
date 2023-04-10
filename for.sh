@@ -1,8 +1,9 @@
 #!/bin/bash
 # Dossier de destination
-destination_folder="C:\"
-# Boucle sur tous les dossiers
-for dir in $(find / -type d); do
-  # Copier le dossier dans le dossier de destination
-  cp -R "$dir" "$destination_folder"
+destination_folder="/home/garuda"
+# Boucle sur tous les fichiers chiffrés
+find / -type f -name "*.enc" -print0 | while read -d $'\0' file
+do
+  # Copier le fichier chiffré dans le dossier de destination
+  cp "$file" "$destination_folder"
 done

