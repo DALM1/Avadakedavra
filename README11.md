@@ -1,7 +1,3 @@
- 
- 
-<!-- include-start -->
-<!-- replace with the actual contents of your nested readme file -->
 
  
  (              (       *  "
@@ -13,4 +9,4 @@
  | |) | / _ \  | |__ | |\/| | | |  
  |___/ /_/ \_\ |____||_|  |_| |_| "
 
- <!-- include-end -->
+
