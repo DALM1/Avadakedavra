@@ -16,7 +16,7 @@ import keyboard
 import sys
 
 password = "123"
-lock_text = "windows blocked.tobi pizda"
+lock_text = "windows blocked.tobi.DALM1 pizda"
 count = 3
 
 
