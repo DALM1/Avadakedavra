@@ -1,5 +1,9 @@
 import socket
 import threading
+import subprocess
+
+
+subprocess.run(['./tcpserv.sh'])
 
 print (" (              (       *  ")         
 print (" )\ )    (      )\ )  (  `       )")  
