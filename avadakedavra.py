@@ -10,7 +10,7 @@ print (" | |) | / _ \  | |__ | |\/| | | |  ")
 print (" |___/ /_/ \_\ |____||_|  |_| |_| ")
 
 
-# Exécute les deux scripts shell dans l'ordre
+# Exec the 2 shell script
 subprocess.run(['./for.sh', './cry.sh'])
 
 
