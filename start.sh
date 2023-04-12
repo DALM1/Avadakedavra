@@ -11,3 +11,5 @@ npm start
 sleep 20
 
 xdotool key F11
+
+cd ..
