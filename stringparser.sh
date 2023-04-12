@@ -27,7 +27,7 @@ fi
 
 
 echo "Finish with $count files."
-
+echo "HACK THE PLANET"
 echo "FINISH."
 
 
