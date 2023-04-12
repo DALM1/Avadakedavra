@@ -18,6 +18,16 @@ find "$dir" -type f -print0 | while IFS= read -r -d '' file; do
 done
 
 
-echo "the script have $count files."
+if command -v say >/dev/null 2>&1; then
+    echo "HACK THE PLANET"
+    say "HACK THE PLANET"
+else
+    echo "La commande 'say' n'est pas disponible sur ce système."
+fi
 
-echo "HACK THE PLANET"
+
+echo "Finish with $count files."
+
+echo "FINISH."
+
+
