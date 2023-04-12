@@ -21,12 +21,13 @@ find "$dir" -type f -print0 | while IFS= read -r -d '' file; do
     echo "\n"
     echo "=========================================="
 
+
 done
 
 
 if command -v say >/dev/null 2>&1; then
     echo "HACK THE PLANET"
-    say "HACK THE PLANET"
+    say "HACK THE PLANET
 else
     echo "'say' is not enable on this system."
 fi
