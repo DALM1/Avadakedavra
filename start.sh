@@ -8,6 +8,6 @@ npm install
 npm start
 
 
-sleep 10
+sleep 20
 
 xdotool key F11
