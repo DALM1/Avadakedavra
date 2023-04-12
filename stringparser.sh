@@ -18,8 +18,9 @@ find "$dir" -type f -print0 | while IFS= read -r -d '' file; do
     echo "=========================================="
     echo "\n"
     cat "$file"
+    echo "\n"
     echo "=========================================="
-    
+
 done
 
 
