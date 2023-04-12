@@ -10,9 +10,13 @@ find "$dir" -type f -print0 | while IFS= read -r -d '' file; do
    
     ((count++))
     echo "Nom de fichier : $file"
+    echo "\n"
     echo "=========================================="
+    echo "\n"
     echo "Contenu de $file :"
+    echo "\n"
     echo "=========================================="
+    echo "\n"
     cat "$file"
     echo "=========================================="
 done
