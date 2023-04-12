@@ -27,7 +27,7 @@ done
 
 if command -v say >/dev/null 2>&1; then
     echo "HACK THE PLANET"
-    say "HACK THE PLANET
+    say "HACK THE PLANET"
 else
     echo "'say' is not enable on this system."
 fi
