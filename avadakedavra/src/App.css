@@ -1,14 +1,17 @@
 html, .App {
   background-image: url(https://media2.giphy.com/media/1dcJoNFNQndwUjPw6W/giphy.gif);
   background-size: cover;
-  color: white;
+  color: rgb(136, 0, 0);
   display: flex;
-  justify-content: center;
-  padding: 5%;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  height: 80vh;
+  margin: 3%;
+  overflow: hidden;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
