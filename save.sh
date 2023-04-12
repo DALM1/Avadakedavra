@@ -3,7 +3,7 @@
 src_dir="/mnt/c/"
 
 # desti
-dest_dir="/chemin/vers/le/repertoire/destination"
+dest_dir="/path/to/destination"
 
 # Save folders
 find "$src_dir" -type d -exec mkdir -p -- "$dest_dir"/{} \;
