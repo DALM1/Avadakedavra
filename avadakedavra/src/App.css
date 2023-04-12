@@ -8,6 +8,10 @@ html, .App {
   height: 80vh;
   margin: 3%;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .App-logo {
