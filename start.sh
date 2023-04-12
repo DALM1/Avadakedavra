@@ -9,4 +9,5 @@ npm start
 
 
 sleep 10
+
 xdotool key F11
