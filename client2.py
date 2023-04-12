@@ -22,17 +22,17 @@ print(f"\nRunning at port {port}")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((host, port))
 
-password = input("Entrez le mot de passe: ")
+password = input("Entrer password: ")
 client_socket.send(password.encode())
 
 response = client_socket.recv(1024).decode()
 
-if response == "Mot de passe incorrect":
+if response == "Incorrect password":
     print(response)
     client_socket.close()
     exit()
 
-username = input("Entrez votre nom d'utilisateur: ")
+username = input("Entrer Username: ")
 client_socket.send(username.encode())
 print("\n")  
 

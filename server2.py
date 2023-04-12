@@ -19,7 +19,7 @@ print(f"Running at port {port}")
 
 
 
-password = "my_secret_password"  # définir un mot de passe
+password = "my_secret_password"  
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind((host, port))
@@ -36,12 +36,12 @@ def broadcast_message(sender_socket, message):
 def handle_client_connection(client_socket):
     try:
        
-        client_socket.send("Entrez le mot de passe: ".encode())
+        client_socket.send("Enter the password: ".encode())
         password = client_socket.recv(1024).decode()
 
        
         if password != password:
-            client_socket.send("Mot de passe incorrect".encode())
+            client_socket.send("incorrect".encode())
             client_socket.close()
             return
 
@@ -52,7 +52,7 @@ def handle_client_connection(client_socket):
         users[client_socket] = username
         clients.append(client_socket)
 
-        welcome_message = f"{username} a rejoint le chat".encode()
+        welcome_message = f"{username} join the chat".encode()
         broadcast_message(client_socket, welcome_message)
 
         while True:
@@ -98,7 +98,7 @@ try:
         thread.start()
 
 except KeyboardInterrupt:
-    print("Arrêt demandé, fermeture des connexions...")
+    print("DOWN")
 
     
     for client_socket in clients:

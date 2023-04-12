@@ -37,13 +37,13 @@ def broadcast_message(sender_socket, message):
 
 def handle_client_connection(client_socket):
    
-    client_socket.send("Entrez votre nom d'utilisateur: ".encode())
+    client_socket.send("Enter Username: ".encode())
     username = client_socket.recv(1024).decode()
 
     users[client_socket] = username
     clients.append(client_socket)
 
-    welcome_message = f"{username} a rejoint le chat".encode()
+    welcome_message = f"{username} join the chat".encode()
     broadcast_message(client_socket, welcome_message)
 
     while True:
@@ -89,7 +89,7 @@ try:
         thread.start()
 
 except KeyboardInterrupt:
-    print("Arrêt demandé, fermeture des connexions...")
+    print("DOWN")
 
 
     for client_socket in clients:

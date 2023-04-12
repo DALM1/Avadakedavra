@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Répertoire source à copier
 src_dir="/mnt/c/"
 
-# Répertoire de destination pour la copie
+# desti
 dest_dir="/chemin/vers/le/repertoire/destination"
 
-# Copie de la structure des dossiers
+# Save folders
 find "$src_dir" -type d -exec mkdir -p -- "$dest_dir"/{} \;
 
-# Copie de tous les fichiers
+# Save all the files
 cp -r "$src_dir"/* "$dest_dir"
